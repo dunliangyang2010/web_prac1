@@ -1,0 +1,25 @@
+{
+  "name": "Web_prac1",
+  "version": "1.0.0",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start":"python app.py"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dunliangyang2010/web_prac1.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dunliangyang2010/web_prac1/issues"
+  },
+  "homepage": "https://github.com/dunliangyang2010/web_prac1#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {},
+  "description": ""
+}
