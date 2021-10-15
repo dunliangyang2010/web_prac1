@@ -1,0 +1,70 @@
+<!-- <!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+  <meta charset="UTF-8"> 
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>路況回報網</title>
+
+  <link rel="icon" href="{{ url_for('static', filename='img/webIcon_1.ico') }}">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+</head>
+
+<body>
+  <nav class="navbar navbar-expand-sm bg-dark navbar-white">
+
+    <ul class="navbar-nav">
+      <li class="nav-item dropdown">
+        <a class="nav-link dropdown-toggle" href="#" id="navbardrop" data-toggle="dropdown"> 網站導覽 </a>
+        <div class="dropdown-menu">
+          <a class="dropdown-item" href="#">Dropdown 1</a>
+          <a class="dropdown-item" href="#">Dropdown 2</a>
+          <a class="dropdown-item" href="#">Dropdown 3</a>
+        </div>  
+      </li>
+      
+      <li class="nav-item">
+        <a class="nav-link" href="#">地圖資訊</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">外部網站</a>
+      </li>
+    </ul>
+  </nav>
+  
+  <h1>路面坑洞數量回報</h1>
+    <p>內容待更新,含gis api串接,css及資料視覺化報表</p>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ka7Sk0Gln4gmtz2MlQnikT1wXgYsOg+OMhuP+IlRH9sENBO0LRn5q+8nbTov4+1p" crossorigin="anonymous"></script>
+</body>
+</html> -->
+
+<!--宣告要套用模板-->
+{% extends "base.html" %}
+
+{% block title %}路況回報網{% endblock %}
+
+{% block main %}
+<div class="jumbotron">
+  <h1><i class="fas fa-apple-alt"></i>路面坑洞數量回報</h1>
+  <p>內容待更新,含<strong>GIS</strong> <strong>文字說明</strong>,<strong>資料視覺化報表</strong></p>
+</div>
+
+<!--使用Bootstrap GridSystem前先加入container-->
+<div class="container">
+  <div class="row desc">
+    <div class="col">
+      <h2><i class="fas fa-kiwi-bird"></i>MAP</h2>
+      <P>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Phasellus cursus felis quis suscipit dictum. Nullam nulla enim, ultrices non orci nec, vestibulum efficitur quam. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. Suspendisse faucibus tellus sem, sed fermentum ipsum gravida at. Donec non magna urna. Phasellus tempor enim sed erat consectetur interdum. Sed vulputate orci eget ipsum imperdiet dignissim. </P>
+    </div>
+    <div class="col">
+      <h2><i class="fas fa-smile-wink"></i>視覺化圖表</h2>
+      <p>Phasellus porttitor hendrerit tristique. Aliquam vel odio hendrerit, accumsan leo a, ultrices ipsum. Donec nibh elit, pellentesque ut iaculis eu, tristique quis nunc. Morbi blandit tempor nisi, id fermentum massa feugiat ut. Donec ut leo eget sem aliquam ornare. Mauris massa purus, luctus eu risus in, pellentesque faucibus risus. Phasellus eu ligula consectetur, interdum nisi viverra, volutpat mi. Pellentesque porta sodales lorem. </p>    
+    </div>
+    <div class="col">
+      <h2><i class="fas fa-leaf"></i>文字說明</h2>
+      <p>Proin vulputate nunc at quam mollis, porta venenatis lectus pretium. Aenean vitae tincidunt magna, in tempor sapien. Nunc quis elit nec ipsum ornare commodo. Donec eu pharetra ligula, sed aliquam quam. Donec nec turpis lobortis dolor accumsan porttitor. Maecenas pretium ut augue et faucibus. Pellentesque ut tempor nisi, sit amet laoreet mauris.Pellentesque feugiat lorem ac eros finibus, a commodo dolor egestas.</p>    
+    </div>
+  </div>
+</div>
+
+{% endblock %}
